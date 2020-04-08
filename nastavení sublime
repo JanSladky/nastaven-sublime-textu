@@ -1,0 +1,141 @@
+CTRL + SHIFT + P, "Package Control Settings - User"
+(CMD + SHIFT + P na Macu)
+
+{
+	"auto_upgrade_last_run": null,
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+		"Laravel Generator",
+		"String Counter"
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AdvancedNewFile",
+		"Alignment",
+		"AlignTab",
+		"AutoFileName",
+		"Autoprefixer",
+		"Better Completion",
+		"Blade Snippets",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"CSS Color Converter",
+		"DashDoc",
+		"DocBlockr",
+		"Emmet",
+		"Highlight",
+		"HTML5",
+		"Inc-Dec-Value",
+		"JavaScript Completions",
+		"JavaScriptNext - ES6 Syntax",
+		"Laravel Blade Highlighter",
+		"Laravel Generator",
+		"LESS",
+		"LiveStyle",
+		"MarkdownPreview",
+		"Material Theme",
+		"Package Control",
+		"PxToEm",
+		"SCSS",
+		"SideBarEnhancements",
+		"String Counter",
+		"TernJS",
+		"W3CValidators"
+	]
+}
+
+
+CTRL + SHIFT + P, "Preferences: Settings"
+(CMD + SHIFT + P na Macu)
+alebo klasicky cez menu, Preferences > Settings
+
+{
+	"always_show_minimap_viewport": true,
+	"bold_folder_labels": true,
+	"caret_extra_width": 1,
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"detect_slow_plugins": true,
+	"dictionary": "Packages/Language - English/en_US.dic",
+	"drag_text": false,
+	"fade_fold_buttons": true,
+	"font_options":
+	[
+		"no_round"
+	],
+	"font_size": 11.0,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Better Java​Script",
+		"Laravel Generator",
+		"String Counter",
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_numbers": true,
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"margin": 4,
+	"material_theme_disable_folder_animation": true,
+	"material_theme_small_tab": true,
+	"overlay_scroll_bars": "enabled",
+	"results_in_dialog": true,
+	"scroll_past_end": true,
+	"sidebar_large": true,
+	"static_modified_tab": true,
+	"sublimelinter_disable":
+	[
+		"css"
+	],
+	"tabs_small": true,
+	"theme": "Material-Theme-Darker.sublime-theme",
+	"trim_trailing_white_space_on_save": true,
+	"use_simple_full_screen": true,
+	"word_wrap": true
+}
+
+Default.sublime-keymap
+CTRL + SHIFT + P, "Key Bindings - User"
+(CMD + SHIFT + P na Macu)
+
+[
+	{ "keys": ["super+v"], "command": "paste_and_indent" },
+	{ "keys": ["super+shift+v"], "command": "paste" },
+	{ "keys": ["ctrl+§"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
+	{ "keys": ["super+shift+d"], "command": "expand_selection", "args": {"to": "word"} },
+	{ "keys": ["super+shift+d"], "command": "find_under_expand", "context":
+		[
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
+		]
+	},
+
+	{ "keys": ["super+d"], "command": "duplicate_line" },
+	{ "keys": ["super+shift+l"], "command": "expand_selection", "args": {"to": "line"} },
+	{ "keys": ["super+l"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+
+	{ "keys": ["super+shift+b"], "command": "toggle_side_bar" },
+
+	{ "keys": ["super+forward_slash"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["super+shift+forward_slash"], "command": "toggle_comment", "args": { "block": true } },
+
+	{ "keys": ["fn+space"], "command": "auto_complete" },
+	{ "keys": ["fn+space"], "command": "replace_completion_with_auto_complete", "context":
+		[
+			{ "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": false },
+			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys": ["ctrl+shift+r"], "command": "reindent", "args": { "single_line": false } },
+	{ "keys": ["super+shift+e"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
+	{ "keys": ["super+ctrl+e"], "command": "px_to_em" },
+	{ "keys": ["shift+alt+d"], "command": "dash_doc"}
+]
